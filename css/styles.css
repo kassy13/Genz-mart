@@ -1,6 +1,7 @@
 :root {
     /* Css Variables:help store our css values so we can reuse them in other places within the code */
     --accent: #2d4a3e;
+    --text-primary: #121212;
 }
 
 * {
@@ -58,10 +59,65 @@ nav {
     gap: 1.5rem;
 }
 
+.nav-links a {
+    color: var(--text-primary);
+    font-weight: 400;
+}
+
+.logo {
+    color: var(--text-primary);
+    font-size: 40px;
+}
+
+.hero {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 80vh;
+    background-image: url('/images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.cta-btn {
+    background-color: white;
+    color: var(--text-primary);
+    padding: 0.875rem 2rem;
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.cta-btn:hover {
+    background-color: var(--accent);
+    color: white;
+}
+
 /* desktop device */
 @media (min-width:768px) {
     .nav-links {
         display: flex;
         gap: 2.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
     }
 }
