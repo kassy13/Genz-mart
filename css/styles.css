@@ -1,0 +1,67 @@
+:root {
+    /* Css Variables:help store our css values so we can reuse them in other places within the code */
+    --accent: #2d4a3e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+.logo {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    border-bottom: 1px solid wheat;
+}
+
+.top-bar {
+    background-color: var(--accent);
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: none;
+    gap: 1.5rem;
+}
+
+/* desktop device */
+@media (min-width:768px) {
+    .nav-links {
+        display: flex;
+        gap: 2.5rem;
+    }
+}
