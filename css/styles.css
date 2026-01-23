@@ -108,6 +108,32 @@ nav {
     color: white;
 }
 
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 5%;
+}
+
+.filter-section {
+    background-color: wheat;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 4px;
+}
+
+select {
+    border: none;
+    background: transparent;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: var(--text-primary);
+    outline: none;
+}
+
 /* desktop device */
 @media (min-width:768px) {
     .nav-links {
@@ -119,5 +145,12 @@ nav {
         font-size: 3rem;
         margin-bottom: 1rem;
         line-height: 1.2;
+    }
+
+    .filter-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
     }
 }
